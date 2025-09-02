@@ -148,11 +148,13 @@ namespace CrossSolver
 
             Console.WriteLine("Finished after " + Math.Round((iterations / 1000000.0), 1) + " million iterations.\n");
 
+            // Initial moves are always the same, selected to ensure tidiest possible outcome.
             Console.WriteLine("X Y DIRECTION");
             Console.WriteLine("-------------");
             Console.WriteLine("4 2 Down");
             Console.WriteLine("6 3 Left");
 
+            // Present the rest of the moves.
             for (int i = 0; i < result.Count; i++)
             {
                 if (i % 5 == 0)
