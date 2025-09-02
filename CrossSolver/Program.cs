@@ -43,6 +43,8 @@ namespace CrossSolver
                 //Console.Write(iterations);
                 result.Clear();
 
+
+                // This represents the board with a border of -1s
                 int[,] matrix = {
             { -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1},
             { -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1},
@@ -57,6 +59,7 @@ namespace CrossSolver
             { -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1},
             };
 
+                // Let's solve it!
                 for (int i = 0; i < MAX_MOVES; i++)
                 {
                     //Console.Write(".");
